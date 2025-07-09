@@ -1,6 +1,4 @@
-﻿using SqlKata.Compilers;
-
-namespace Monopoly_Test_v2
+﻿namespace Monopoly_Test_v2
 {
     internal class Program
     {

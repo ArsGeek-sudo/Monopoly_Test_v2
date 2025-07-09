@@ -1,15 +1,10 @@
 ﻿using Npgsql;
 using SqlKata.Compilers;
 using SqlKata.Execution;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Monopoly_Test_v2
 {
-    internal class GetData
+    public class GetData : IDataService
     {
         const string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=1;Database=monopoly_test";
         PostgresCompiler compiler = new PostgresCompiler();

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Monopoly_Test_v2
+﻿namespace Monopoly_Test_v2
 {
-    internal class Menu
+    public class Menu
     {
         GetData getData = new GetData();
         InsertData insertData = new InsertData();
@@ -104,7 +98,8 @@ namespace Monopoly_Test_v2
             // Группировка и сортировка
             var groupedPallets = pallets
                 .GroupBy(p => p.ExpirationDate)
-                .Select(g => new {
+                .Select(g => new
+                {
                     ExpirationDate = g.Key,
                     Pallets = g.OrderBy(p => p.TotalWeight).ToList()
                 })
